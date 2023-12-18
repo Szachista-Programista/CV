@@ -73,10 +73,34 @@
       "src": "typicons"
     },
     {
-      "uid": "1e89103762be72b0720eda0468e62b90",
-      "css": "globe",
+      "uid": "bf882b30900da12fca090d9796bc3030",
+      "css": "mail",
+      "code": 59403,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
+      "css": "phone-2",
+      "code": 59404,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "i6ej1r6t84xouh0dct7g9zyx3ya9s9eg",
+      "css": "globe-1",
+      "code": 59397,
+      "src": "modernpics"
+    },
+    {
+      "uid": "5308d824454af8ec7835786e272361a9",
+      "css": "level-up",
       "code": 59395,
-      "src": "linecons"
+      "src": "entypo"
+    },
+    {
+      "uid": "05a2f4c4839012434774cc1ceb4c0f9b",
+      "css": "download-alt",
+      "code": 59400,
+      "src": "elusive"
     }
   ]
 }

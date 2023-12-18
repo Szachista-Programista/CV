@@ -2,10 +2,14 @@
 .icon-clock-alt:before { content: '\e800'; } /* '' */
 .icon-briefcase:before { content: '\e801'; } /* '' */
 .icon-user:before { content: '\e802'; } /* '' */
-.icon-globe:before { content: '\e803'; } /* '' */
+.icon-level-up:before { content: '\e803'; } /* '' */
 .icon-lightbulb-1:before { content: '\e804'; } /* '' */
+.icon-globe-1:before { content: '\e805'; } /* '' */
 .icon-rocket:before { content: '\e806'; } /* '' */
 .icon-star-filled:before { content: '\e807'; } /* '' */
+.icon-download-alt:before { content: '\e808'; } /* '' */
+.icon-mail:before { content: '\e80b'; } /* '' */
+.icon-phone-2:before { content: '\e80c'; } /* '' */
 .icon-chat-1:before { content: '\f03d'; } /* '' */
 .icon-doc:before { content: '\f04a'; } /* '' */
 .icon-phone-squared:before { content: '\f098'; } /* '' */
