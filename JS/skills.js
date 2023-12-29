@@ -15,52 +15,168 @@ window.addEventListener("scroll", function () {
   background.style.transform = "translateY(" + scrolled * 0.25 + "px)";
 });
 /////////////////////SCROLLBAR//////////////////////
+
 document.addEventListener("DOMContentLoaded", function () {
   document.documentElement.scrollTop = 50;
 });
 ////////////////////////////////////////////////////
+
+document
+  .getElementById("scrollLink_up_to_0")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 50);
+  });
 document
   .getElementById("scrollLink1")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    window.scrollTo(0, 1600);
+    window.scrollTo(0, 1400);
+  });
+document
+  .getElementById("scrollLink_up_to_1")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 1400);
   });
 
 document
   .getElementById("scrollLink2")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    window.scrollTo(0, 2900);
+    window.scrollTo(0, 2800);
   });
-
+document
+  .getElementById("scrollLink_up_to_2")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 2800);
+  });
+document
+  .getElementById("scrollLink_down_to_2")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 2800);
+  });
 document
   .getElementById("scrollLink3")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    window.scrollTo(0, 4200);
+    window.scrollTo(0, 4000);
   });
-/////////////////////BACKGROUNG COLOR/////////////////////////
+document
+  .getElementById("scrollLink33")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 4000);
+  });
+document
+  .getElementById("scrollLink_up_to_3")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 4000);
+  });
+document
+  .getElementById("scrollLink_down_to_3")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 4000);
+  });
+document
+  .getElementById("scrollLink4")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 5200);
+  });
+document
+  .getElementById("scrollLink_up_to_4")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 5200);
+  });
+document
+  .getElementById("scrollLink_down_to_4")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 5200);
+  });
+document
+  .getElementById("scrollLink5")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 6500);
+  });
+document
+  .getElementById("scrollLink_up_to_5")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 6500);
+  });
+document
+  .getElementById("scrollLink_down_to_5")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 6500);
+  });
+document
+  .getElementById("scrollLink6")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 8100);
+  });
+document
+  .getElementById("scrollLink66")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 7900);
+  });
+document
+  .getElementById("scrollLink666")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 8560);
+  });
+document
+  .getElementById("scrollLink6666")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 8400);
+  });
+document
+  .getElementById("scrollLink_down_to_6")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 7900);
+  });
+document
+  .getElementById("scrollLink_down_to_7")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 9000);
+  });
+////////////////////moving///divs///////////////////
 document.addEventListener("DOMContentLoaded", function () {
-  window.addEventListener("scroll", function () {
-    const scrollValue = window.scrollY;
+  var movingDivs = document.querySelectorAll(".moving_div");
+  var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (300 <= scrollValue && scrollValue < 1600) {
-      document.body.style.backgroundColor = `rgb(
-        ${27},
-        ${-scrollValue / 100 + 30},
-        ${27})`;
+  window.addEventListener("scroll", function () {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop < lastScrollTop) {
+      movingDivs.forEach(function (div) {
+        div.classList.add("moved_up");
+        setTimeout(function () {
+          div.classList.remove("moved_up");
+        }, 100);
+      });
+    } else {
+      movingDivs.forEach(function (div) {
+        div.classList.add("moved_down");
+        setTimeout(function () {
+          div.classList.remove("moved_down");
+        }, 100);
+      });
     }
-    if (1600 <= scrollValue && scrollValue < 2900) {
-      document.body.style.backgroundColor = `rgb(
-        ${27},
-        ${14},
-        ${-scrollValue / 100 + 43})`;
-    }
-    if (2900 <= scrollValue && scrollValue < 4200) {
-      document.body.style.backgroundColor = `rgb(
-        ${27},
-        ${scrollValue / 100 - 15},
-        ${scrollValue / 100 - 15})`;
-    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
   });
 });

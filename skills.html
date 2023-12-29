@@ -1,55 +1,925 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="UTF-8" />
-        <title>KK-zainteresowania</title>
-        <meta
-            name="description"
-            content="Pozwól, że opowiem Ci o tym, czym się interesuję."
-        />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <link rel="stylesheet" href="CSS/skills.css" />
-        <link rel="stylesheet" href="CSS/fontello.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Source+Sans+3&family=Work+Sans:wght@300;400;500&display=swap"
-            rel="stylesheet"
-        />
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>KK-zainteresowania</title>
+    <meta
+      name="description"
+      content="Pozwól, że opowiem Ci o tym, czym się interesuję."
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="CSS/skills.css" />
+    <link rel="stylesheet" href="CSS/fontello.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3&family=Work+Sans:wght@400;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <body>
-        <div id="container">
-            <!-- ********************************************************************* -->
-            <!-- ******************************BACKGROUND***************************** -->
-            <!-- ********************************************************************* -->
+  <body>
+    <div id="container">
+      <!-- ********************************************************************* -->
+      <!-- ******************************BACKGROUND***************************** -->
+      <!-- ********************************************************************* -->
+      <div id="background3" style="position: absolute">
+        <div style="top: 2000px; left: 400px" class="gear2"></div>
+        <div style="top: 1000px; left: 1800px" class="gear3"></div>
+        <div style="top: 2000px; left: 2000px" class="dots1"></div>
+      </div>
+      <div id="background2" style="position: absolute">
+        <div style="top: 700px; left: 2100px" class="gear1"></div>
+        <div style="top: 2000px; left: 300px" class="gear2"></div>
+      </div>
+      <div id="background1" style="position: absolute">
+        <div style="top: 0px; left: 300px" class="gear3"></div>
+        <div style="top: 1000px; left: 500px" class="gear1"></div>
+        <div style="top: 7500px; left: 2000px" class="gear3"></div>
+      </div>
+
+      <!-- ********************************************************************* -->
+      <!-- ******************************FOREGROUND***************************** -->
+      <!-- ********************************header******************************* -->
+      <div id="foreground">
+        <header style="position: relative; height: 1300px; left: -50px">
+          <div
+            class="moving_div moving_div_8"
+            style="position: relative; left: 350px"
+          >
             <img
-                id="background3"
-                style="width: 3000px; height: 6000px; position: absolute"
-                src="obrazki/background_elements/background_3.png"
+              style="position: absolute; width: 490px"
+              src="obrazki/skills/hex.png"
             />
-            <img
-                id="background2"
-                style="width: 3000px; height: 6000px; position: absolute"
-                src="obrazki/background_elements/background_2.png"
-            />
-            <img
-                id="background1"
-                style="width: 3000px; height: 6000px; position: absolute"
-                src="obrazki/background_elements/background_1.png"
-            />
-            <!-- ********************************************************************* -->
-            <!-- ******************************FOREGROUND***************************** -->
-            <!-- ********************************header******************************* -->
-            <div id="foreground">
-                <header></header>
-                <!-- *********************************main******************************** -->
-                <main></main>
-                <!-- ********************************footer******************************* -->
-                <footer></footer>
-                <!-- ********************************************************************* -->
+            <p
+              style="
+                position: absolute;
+                text-align: justify;
+                width: 410px;
+                left: 40px;
+                top: 155px;
+                line-height: 1.3;
+              "
+            >
+              Nigdy nie zamierzałem poddać się wszechobecnemu agresywnemu
+              marketingowi według, którego powinienem kupić kurs programowania,
+              bo inaczej niczego się nie nauczę. Od zawsze byłem osobą
+              samodzielną, zdolną do samokształcenia oraz zaangażowaną
+              w&nbsp;rozwijanie umiejętności. Wybór studiowania zasobów w
+              rodzaju książki i&nbsp;zdobywania praktycznego doświadczenia
+              poprzez pisanie programów w domu jest zdecydowanie cenniejszy.
+              Edukacja programistyczna nie może ograniczać się tylko do kursów
+              online. Samodzielne studiowanie zasobów, takich jak książki,
+              umożliwia bardziej skoncentrowane i&nbsp;głębsze zrozumienie
+              tematów. Osoby idące tą drogą pokazują zdolność do samodzielnego
+              rozwiązywania problemów, co jest bardzo ważne w świecie
+              programowania. Niech zdobyta wiedza i&nbsp;doświadczenie bronią
+              się same.
+            </p>
+          </div>
+          <p
+            style="
+              position: absolute;
+              color: #ffaa11;
+              font-weight: 600;
+              font-size: 30px;
+              left: 80px;
+              top: -80px;
+            "
+          >
+            Poznałem:
+          </p>
+          <p
+            style="
+              position: absolute;
+              color: #ffaa11;
+              font-weight: 600;
+              font-size: 30px;
+              left: 850px;
+              top: -80px;
+            "
+          >
+            Niedługo&nbsp;poznam:
+          </p>
+          <nav>
+            <a
+              class="hex moving_div moving_div_4"
+              style="left: 360px; top: -40px"
+              href="index.html"
+            >
+              <img
+                class="hex3"
+                style="width: 100px"
+                src="obrazki/skills/orange.png"
+              />
+              <p>
+                Strona <br />
+                główna
+              </p>
+            </a>
+            <a
+              id="scrollLink5"
+              class="hex moving_div moving_div_2"
+              style="left: 440px; top: 420px"
+              href="#"
+            >
+              <img
+                class="hex3"
+                style="width: 120px"
+                src="obrazki/skills/orange.png"
+              />
+              <p style="top: 85px">
+                Umiejętności <br />
+                miękkie
+              </p>
+            </a>
+            <a
+              id="scrollLink1"
+              class="hex moving_div moving_div_1"
+              id="scrollLink1"
+              style="left: -30px; top: 0px"
+              href="#"
+            >
+              <img class="hex hex1" src="obrazki/skills/C++.background.png" />
+              <img
+                class="hex2"
+                style="width: 75px"
+                src="obrazki/skills/C++.png"
+            /></a>
+            <a
+              id="scrollLink2"
+              class="hex moving_div moving_div_5"
+              style="left: 140px; top: 70px"
+              href="#"
+            >
+              <img class="hex hex1" src="obrazki/skills/white.png" />
+              <img
+                class="hex2"
+                style="width: 75px"
+                src="obrazki/skills/JAVA.png"
+            /></a>
+            <a
+              id="scrollLink3"
+              class="hex git moving_div moving_div_7"
+              style="left: 20px; top: 210px"
+              href="#"
+            >
+              <img class="hex hex1" src="obrazki/skills/white.png" />
+              <img
+                class="hex2"
+                style="width: 75px"
+                src="obrazki/skills/GIT.png"
+            /></a>
+            <a
+              id="scrollLink33"
+              class="hex github moving_div moving_div_3"
+              style="left: -10px; top: 380px"
+              href="#"
+            >
+              <img
+                class="hex hex1"
+                src="obrazki/skills/GITHUB.background.png" />
+              <img
+                class="hex2"
+                style="width: 75px"
+                src="obrazki/skills/GITHUB.png"
+            /></a>
+            <a
+              id="scrollLink4"
+              class="hex moving_div moving_div_4"
+              style="left: 190px; top: 350px"
+              href="#"
+            >
+              <img class="hex hex1" src="obrazki/skills/white.png" />
+              <img
+                class="hex2"
+                style="width: 75px"
+                src="obrazki/skills/WWW.png"
+            /></a>
+            <a
+              id="scrollLink6"
+              class="hex moving_div moving_div_2"
+              style="left: 870px; top: 20px"
+              href="#"
+            >
+              <img
+                class="hex hex1"
+                src="obrazki/skills/CSharp.background.png" />
+              <img
+                class="hex2"
+                style="width: 75px"
+                src="obrazki/skills/CSharp.png"
+            /></a>
+            <a
+              id="scrollLink66"
+              class="hex moving_div moving_div_6"
+              style="left: 880px; top: 270px"
+              href="#"
+            >
+              <img class="hex hex1" src="obrazki/skills/white.png" />
+              <img
+                class="hex2"
+                style="width: 75px"
+                src="obrazki/skills/DOCKER.png"
+            /></a>
+            <a
+              id="scrollLink666"
+              class="hex moving_div moving_div_5"
+              style="left: 1000px; top: 150px"
+              href="#"
+            >
+              <img class="hex hex1" src="obrazki/skills/white.png" />
+              <img
+                class="hex2"
+                style="width: 75px"
+                src="obrazki/skills/MySQL.png"
+            /></a>
+            <a
+              id="scrollLink6666"
+              class="hex moving_div moving_div_3"
+              style="left: 780px; top: 450px"
+              href="#"
+            >
+              <img class="hex hex1" src="obrazki/skills/white.png" />
+              <img
+                class="hex2"
+                style="width: 75px"
+                src="obrazki/skills/PYTHON.png"
+            /></a>
+          </nav>
+        </header>
+        <!-- *********************************main******************************** -->
+        <main>
+          <article id="C++" style="position: relative; height: 1400px">
+            <div style="position: relative; z-index: 1; left: 25px">
+              <img
+                src="obrazki/skills/C++.png"
+                style="position: absolute; width: 150px"
+              />
+              <a
+                class="arrow"
+                href="#"
+                id="scrollLink_up_to_0"
+                style="left: 19px; top: -13px"
+              >
+                <img
+                  class="arrow arrow_up_1"
+                  src="obrazki/skills/arrow_up.png"
+                />
+                <img
+                  class="arrow arrow_up_2"
+                  src="obrazki/skills/arrow_up+.png"
+                />
+              </a>
+              <a
+                class="arrow"
+                href="#"
+                id="scrollLink_down_to_2"
+                style="left: 19px; top: 145px"
+              >
+                <img
+                  class="arrow arrow_down_1"
+                  src="obrazki/skills/arrow_down.png"
+                />
+                <img
+                  class="arrow arrow_down_2"
+                  src="obrazki/skills/arrow_down+.png"
+                />
+              </a>
             </div>
+            <div
+              class="moving_div moving_div_2"
+              style="position: relative; left: 120px; top: -60px"
+            >
+              <img
+                src="obrazki/skills/hex.png"
+                style="position: absolute; width: 740px"
+              />
+              <p
+                style="
+                  position: absolute;
+                  width: 600px;
+                  text-align: justify;
+                  left: 70px;
+                  top: 215px;
+                "
+              >
+                Od momentu odkrycia fascynacji językiem C++ na początku
+                gimnazjum, inspirowanego kanałem Pana Mirosława Zelenta na
+                YouTube, postrzegam programowanie jako niezwykłą przygodę.
+                Wówczas, pisanie kodu stało się dla mnie świetną zabawą, a
+                obserwowanie efektów jego działania dostarczało wielkiej
+                satysfakcji.<br /><br />
+
+                Podczas nauki w technikum dzieliłem się swoją pasją z kolegą z
+                klasy, wprowadzając go w świat programowania. Ta wspólna zabawa
+                C++'em zaowocowała moimi doświadczeniami w branży, a kolega
+                dzięki temu od kilku lat prauje jako programista. teraz na mnie
+                kolej.<br /><br />
+
+                Na studiach postanowiłem zgłębić tajniki C++, co skłoniło mnie
+                do lektury "Symfonii C++" autorstwa Jerzego Grębosza. Ta książka
+                otworzyła drzwi do programowania obiektowego, co stało się moim
+                obszarem zainteresowań.<br /><br />
+
+                Nadążając za dynamicznym rozwojem języka, rok temu podjąłem
+                decyzję, że programowanie stanie się dla mnie nie tylko pasją,
+                lecz także zawodem. Zakupiłem "Opus Magnum C++" Jerzego
+                Grębosza, 4-tomową księge, która pozwoliła mi nie tylko
+                przypomnieć sobie tajniki C++11, lecz także zaznajomić się z
+                nowościami wprowadzonymi w wersjach C++14 i C++17.<br /><br />
+
+                W międzyczasie, z myślą o przyszłej pracy, zaangażowałem się w
+                mój najważniejszy projekt, który jest dla mnie wyzwaniem i
+                okazją do rozwijania umiejętności backend developerskich.<br /><br />
+
+                Jestem przekonany, że moje zdolności programistyczne,
+                umiejętność analitycznego myślenia oraz pasja do rozwiązywania
+                problemów sprawią, że stanę się cennym członkiem zespołu jako
+                backend developer. Moje doświadczenie i nieustanne dążenie do
+                doskonalenia sprawiają, że jestem gotów na nowe wyzwania i
+                rozwijanie się w dynamicznym środowisku branży informatycznej.
+              </p>
+            </div>
+          </article>
+          <article id="JAVA" style="position: relative; height: 1200px">
+            <div style="position: relative; z-index: 1; left: 25px">
+              <img
+                src="obrazki/skills/JAVA.png"
+                style="position: absolute; width: 150px"
+              />
+              <a
+                class="arrow"
+                href="#"
+                id="scrollLink_up_to_1"
+                style="left: 19px; top: -13px"
+              >
+                <img
+                  class="arrow arrow_up_1"
+                  src="obrazki/skills/arrow_up.png"
+                />
+                <img
+                  class="arrow arrow_up_2"
+                  src="obrazki/skills/arrow_up+.png"
+                />
+              </a>
+              <a
+                class="arrow"
+                href="#"
+                id="scrollLink_down_to_3"
+                style="left: 19px; top: 145px"
+              >
+                <img
+                  class="arrow arrow_down_1"
+                  src="obrazki/skills/arrow_down.png"
+                />
+                <img
+                  class="arrow arrow_down_2"
+                  src="obrazki/skills/arrow_down+.png"
+                />
+              </a>
+            </div>
+            <div
+              class="moving_div moving_div_2"
+              style="position: relative; left: 120px; top: -10px"
+            >
+              <img
+                src="obrazki/skills/hex.png"
+                style="position: absolute; width: 550px"
+              />
+              <p
+                style="
+                  position: absolute;
+                  width: 450px;
+                  text-align: justify;
+                  left: 50px;
+                  top: 175px;
+                "
+              >
+                Dzięki mojej głębokiej znajomości języka programowania C++, z
+                zapałem rozszerzam swoje umiejętności na polu Javy. Zdaję sobie
+                sprawę, że oba te języki są znacznie do siebie podobne, co
+                sprawia, że przyswajanie wiedzy z&nbsp;jednego z nich ułatwia
+                zrozumienie drugiego. Znając C++, odkrywam, że&nbsp;zaskakująco
+                sprawnie mogę poruszać się w świecie Javy.<br /><br />
+
+                Obecnie pochłaniam treści zawarte w książce "Java: Kompendium
+                Wiedzy Programisty" autorstwa Herberta Schildta. Ta
+                wszechstronna lektura pozwala mi zgłębić skomplikowane aspekty
+                Javy, a jednocześnie dostarcza wnikliwego spojrzenia na praktyki
+                programistyczne. Z każdym rozdziałem poszerzam swoją wiedzę,
+                zdobywając głębsze zrozumienie struktury języka oraz jego
+                potencjału.<br /><br />
+
+                Nawiązując do mojego doświadczenia z C++ oraz aktualnych studiów
+                nad Javą, jestem przekonany, że moje umiejętności
+                programistyczne stanowią solidną podstawę dla rozwinięcia się w
+                roli programisty Java.
+              </p>
+            </div>
+          </article>
+          <article id="GIT/GITHUB" style="position: relative; height: 1200px">
+            <div style="position: relative; z-index: 1; left: 25px">
+              <img
+                src="obrazki/skills/GIT+GITHUB.png"
+                style="position: absolute; width: 150px"
+              />
+              <a
+                class="arrow"
+                href="#"
+                id="scrollLink_up_to_2"
+                style="left: 19px; top: -13px"
+              >
+                <img
+                  class="arrow arrow_up_1"
+                  src="obrazki/skills/arrow_up.png"
+                />
+                <img
+                  class="arrow arrow_up_2"
+                  src="obrazki/skills/arrow_up+.png"
+                />
+              </a>
+              <a
+                class="arrow"
+                href="#"
+                id="scrollLink_down_to_4"
+                style="left: 19px; top: 145px"
+              >
+                <img
+                  class="arrow arrow_down_1"
+                  src="obrazki/skills/arrow_down.png"
+                />
+                <img
+                  class="arrow arrow_down_2"
+                  src="obrazki/skills/arrow_down+.png"
+                />
+              </a>
+            </div>
+            <div
+              class="moving_div moving_div_2"
+              style="position: relative; left: 120px; top: 10px"
+            >
+              <img
+                src="obrazki/skills/hex.png"
+                style="position: absolute; width: 500px"
+              />
+              <p
+                style="
+                  position: absolute;
+                  width: 400px;
+                  text-align: justify;
+                  left: 50px;
+                  top: 160px;
+                "
+              >
+                Moja znajomość systemu kontroli wersji Git oraz platformy GitHub
+                opiera się na solidnych fundamentach. Przeczytałem książkę "Git
+                dla Profesjonalistów" autorstwa Scotta Chacona i Bena Strauba,
+                co umożliwiło mi pełne zrozumienie zaawansowanych funkcji tych
+                narzędzi. Od dłuższego czasu aktywnie korzystam z Gita z poziomu
+                konsoli, co pozwala mi swobodnie operować na gałęziach, tworzyć
+                commity, oraz skutecznie rozwiązywać ewentualne konflikty.<br /><br />
+
+                Dzięki regularnym praktykom związanych z korzystaniem z systemu
+                Git, doskonale radzę sobie w śledzeniu historii projektu oraz
+                łączeniu gałęzi. Znajomość Git i GitHub to dla mnie nie tylko
+                narzędzia kontroli wersji, ale integralna część mojego
+                codziennego workflow, co umożliwia mi sprawne oraz skuteczne
+                zarządzanie kodem źródłowym projektów.
+              </p>
+            </div>
+          </article>
+          <article id="HTML/CSS/JS" style="position: relative; height: 1300px">
+            <div style="position: relative; z-index: 1; left: 25px">
+              <img
+                src="obrazki/skills/WWW.png"
+                style="position: absolute; width: 150px"
+              />
+              <a
+                class="arrow"
+                href="#"
+                id="scrollLink_up_to_3"
+                style="left: 19px; top: -13px"
+              >
+                <img
+                  class="arrow arrow_up_1"
+                  src="obrazki/skills/arrow_up.png"
+                />
+                <img
+                  class="arrow arrow_up_2"
+                  src="obrazki/skills/arrow_up+.png"
+                />
+              </a>
+              <a
+                class="arrow"
+                href="#"
+                id="scrollLink_down_to_5"
+                style="left: 19px; top: 145px"
+              >
+                <img
+                  class="arrow arrow_down_1"
+                  src="obrazki/skills/arrow_down.png"
+                />
+                <img
+                  class="arrow arrow_down_2"
+                  src="obrazki/skills/arrow_down+.png"
+                />
+              </a>
+            </div>
+            <div
+              class="moving_div moving_div_2"
+              style="position: relative; left: 120px; top: -20px"
+            >
+              <img
+                src="obrazki/skills/hex.png"
+                style="position: absolute; width: 600px"
+              />
+              <p
+                style="
+                  position: absolute;
+                  width: 500px;
+                  text-align: justify;
+                  left: 50px;
+                  top: 190px;
+                "
+              >
+                Zajmuję się hobbistycznie tworzeniem stron internetowych, a moje
+                umiejętności w tej dziedzinie znacznie się rozwinęły od kiedy
+                zacząłem pracować nad tą stroną internetową. Posługuję się
+                językami HTML i CSS na poziomie, który umożliwia
+                mi&nbsp;efektywne projektowanie i stylizację stron
+                internetowych. Zdobytą wiedzę praktyczną oraz teoretyczną w
+                obszarze HTML i CSS wykorzystuję do tworzenia estetycznych
+                interfejsów.<br /><br />
+
+                W zakresie JavaScript, choć moje doświadczenie jest jeszcze na
+                poziomie początkującego, aktywnie poszerzam swoje umiejętności.
+                Dużym ułatwieniem w&nbsp;nauce frontendu jest fakt, że często
+                wystarczy wcisnąć F5, aby zobaczyć efekty swojej pracy, co
+                ułatwia mi stopniowe doskonalenie kodu i zrozumienie bardziej
+                zaawansowanych koncepcji.<br /><br />
+
+                Gotowość do nauki oraz zdolność do efektywnego stosowania
+                zdobytej wiedzy sprawiają, że jestem gotów na wyzwania związane
+                z tworzeniem nowoczesnych stron internetowych. W ramach mojej
+                nauki, skorzystałem w wielu forów internetowych, co&nbsp;było
+                dla mnie cennym wsparciem w dążeniu do pełniejszego zrozumienia
+                tej&nbsp;technologii.
+              </p>
+            </div>
+          </article>
+          <article id="soft skills" style="position: relative; height: 1400px">
+            <div style="position: relative; z-index: 1; left: 25px">
+              <img
+                src="obrazki/skills/hex2.png"
+                style="position: absolute; width: 150px"
+              />
+              <p
+                style="
+                  position: absolute;
+                  width: 150px;
+                  font-weight: 600;
+                  font-size: 18px;
+                  text-align: center;
+                  top: 50px;
+                "
+              >
+                Umiejętności miękkie
+              </p>
+              <a
+                class="arrow"
+                href="#"
+                id="scrollLink_up_to_4"
+                style="left: 19px; top: -13px"
+              >
+                <img
+                  class="arrow arrow_up_1"
+                  src="obrazki/skills/arrow_up.png"
+                />
+                <img
+                  class="arrow arrow_up_2"
+                  src="obrazki/skills/arrow_up+.png"
+                />
+              </a>
+              <a
+                class="arrow"
+                href="#"
+                id="scrollLink_down_to_6"
+                style="left: 19px; top: 145px"
+              >
+                <img
+                  class="arrow arrow_down_1"
+                  src="obrazki/skills/arrow_down.png"
+                />
+                <img
+                  class="arrow arrow_down_2"
+                  src="obrazki/skills/arrow_down+.png"
+                />
+              </a>
+            </div>
+            <div
+              class="moving_div moving_div_2"
+              style="position: relative; left: 130px; top: -60px"
+            >
+              <img
+                src="obrazki/skills/hex.png"
+                style="position: absolute; width: 760px"
+              />
+              <p
+                style="
+                  position: absolute;
+                  width: 620px;
+                  text-align: justify;
+                  left: 70px;
+                  top: 220px;
+                "
+              >
+                <span class="highlight">Komunikacja i Praca Zespołowa:</span
+                ><br />
+                Wykazuję zdolności do klarownej komunikacji, co ułatwia
+                efektywną współpracę zespołową. Potrafię jasno prezentować swoje
+                pomysły, a także aktywnie słuchać opinii innych, co sprzyja
+                harmonijnemu funkcjonowaniu grupy.<br />
+                <br />
+                <span class="highlight">Rozwiązywanie Problemów:</span><br />
+                Posiadam umiejętność analitycznego myślenia i skutecznego
+                rozwiązywania problemów. Potrafię podejść do wyzwań z
+                determinacją, poszukując innowacyjnych i efektywnych
+                rozwiązań.<br />
+                <br />
+                <span class="highlight">Samodzielność i Samokształcenie:</span
+                ><br />
+                Jestem osobą samodzielną, gotową na nieustanne doskonalenie się.
+                Umiejętność samokształcenia oraz zdolność do przyswajania nowych
+                informacji stanowią dla mnie ważne narzędzia w dynamicznym
+                świecie technologii.<br />
+                <br />
+                <span class="highlight">Odporność na Presję:</span><br />
+                Posiadam praktykę w realizacji projektów oraz umiejętność
+                efektywnego zarządzania czasem, co umożliwia mi utrzymanie
+                wysokiego poziomu efektywności, nawet w sytuacjach pod presją
+                czasu.<br />
+                <br />
+                <span class="highlight">Kreatywność i Innowacyjność:</span
+                ><br />
+                Potrafię podejść do projektów z kreatywnie, co umożliwia mi
+                tworzenie innowacyjnych rozwiązań. Nie boję się eksperymentować
+                i szukać nowych ścieżek w&nbsp;procesie twórczym.<br />
+                <br />
+                <span class="highlight">Systematyczność i Organizacja:</span
+                ><br />
+                Posiadam umiejętność skrupulatnej organizacji pracy, co
+                przejawia się w systematycznym postępowaniu oraz efektywnym
+                osiąganiu celów projektowych.
+              </p>
+            </div>
+          </article>
+          <article
+            id="docker/C#/MySQL/python"
+            style="position: relative; height: 1700px"
+          >
+            <div style="position: relative; z-index: 1; left: 25px">
+              <img
+                src="obrazki/skills/hex2.png"
+                style="position: absolute; width: 150px"
+              />
+              <p
+                style="
+                  position: absolute;
+                  width: 150px;
+                  font-weight: 600;
+                  font-size: 18px;
+                  text-align: center;
+                  top: 50px;
+                "
+              >
+                Niedługo poznam
+              </p>
+              <a
+                class="arrow"
+                href="#"
+                id="scrollLink_up_to_5"
+                style="left: 19px; top: -13px"
+              >
+                <img
+                  class="arrow arrow_up_1"
+                  src="obrazki/skills/arrow_up.png"
+                />
+                <img
+                  class="arrow arrow_up_2"
+                  src="obrazki/skills/arrow_up+.png"
+                />
+              </a>
+              <a
+                class="arrow"
+                href="#"
+                id="scrollLink_down_to_7"
+                style="left: 19px; top: 145px"
+              >
+                <img
+                  class="arrow arrow_down_1"
+                  src="obrazki/skills/arrow_down.png"
+                />
+                <img
+                  class="arrow arrow_down_2"
+                  src="obrazki/skills/arrow_down+.png"
+                />
+              </a>
+            </div>
+            <div style="position: relative; left: 420px; top: 0px">
+              <div style="position: absolute; z-index: 1">
+                <img
+                  src="obrazki/skills/DOCKER.png"
+                  style="position: absolute; width: 150px"
+                />
+              </div>
+              <div
+                class="moving_div moving_div_3"
+                style="position: absolute; left: 100px; top: 60px"
+              >
+                <img
+                  src="obrazki/skills/hex.png"
+                  style="position: absolute; width: 320px"
+                />
+                <p
+                  style="
+                    position: absolute;
+                    width: 260px;
+                    text-align: justify;
+                    left: 30px;
+                    top: 100px;
+                  "
+                >
+                  W moim nieustannym dążeniu do rozwoju zawodowego, planuję w
+                  najbliższym czasie zdobyć nowe umiejętności, które znacząco
+                  poszerzą mój zakres kompetencji. Jednym z&nbsp;głównych celów
+                  jest nauka obsługi Dockera, co umożliwi mi skuteczne
+                  zarządzanie kontenerami i zoptymalizowanie procesu wdrażania
+                  aplikacji. Chcę zgłębić tę technologię, aby w pełni
+                  wykorzystać jej potencjał w codziennej pracy.
+                </p>
+              </div>
+            </div>
+            <div style="position: relative; left: -40px; top: 200px">
+              <img
+                src="obrazki/skills/CSharp.png"
+                style="position: absolute; z-index: 1; width: 150px"
+              />
+              <div
+                class="moving_div moving_div_4"
+                style="position: absolute; left: 100px; top: 60px"
+              >
+                <img
+                  src="obrazki/skills/hex.png"
+                  style="position: absolute; width: 340px"
+                />
+                <p
+                  style="
+                    position: absolute;
+                    width: 280px;
+                    text-align: justify;
+                    left: 30px;
+                    top: 120px;
+                  "
+                >
+                  Kolejnym krokiem na mojej ścieżce rozwoju jest nauka języka
+                  programowania C#, który znany jest ze swojej wszechstronności
+                  i szerokiego zastosowania, zwłaszcza w obszarze tworzenia
+                  aplikacji na platformę .NET. Chcę zdobyć solidne podstawy tego
+                  języka, aby efektywnie projektować i implementować aplikacje,
+                  rozwijając się w kierunku tworzenia rozwiązań backendowych.
+                </p>
+              </div>
+            </div>
+            <div style="position: relative; left: -30px; top: 660px">
+              <img
+                src="obrazki/skills/MySQL.png"
+                style="position: absolute; z-index: 1; width: 150px"
+              />
+              <div
+                class="moving_div moving_div_5"
+                style="position: absolute; left: 100px; top: 60px"
+              >
+                <img
+                  src="obrazki/skills/hex.png"
+                  style="position: absolute; width: 290px"
+                />
+                <p
+                  style="
+                    position: absolute;
+                    width: 230px;
+                    text-align: justify;
+                    left: 30px;
+                    top: 100px;
+                  "
+                >
+                  Dodatkowo, zamierzam poszerzyć moje umiejętności w obszarze
+                  zarządzania bazą danych poprzez naukę MySQL. Opanowanie tego
+                  systemu zarządzania bazą danych pozwoli mi skuteczniej
+                  projektować i utrzymywać struktury danych, co jest ważne w
+                  pracy programisty.
+                </p>
+              </div>
+            </div>
+            <div style="position: relative; left: 500px; top: 500px">
+              <img
+                src="obrazki/skills/PYTHON.png"
+                style="position: absolute; z-index: 1; width: 150px"
+              />
+              <div
+                class="moving_div moving_div_6"
+                style="position: absolute; left: 100px; top: 60px"
+              >
+                <img
+                  src="obrazki/skills/hex.png"
+                  style="position: absolute; width: 350px"
+                />
+                <p
+                  style="
+                    position: absolute;
+                    width: 290px;
+                    text-align: justify;
+                    left: 30px;
+                    top: 100px;
+                  "
+                >
+                  Planuję poszerzyć moje umiejętności o język programowania
+                  Python. Jego wszechstronne zastosowanie w analizie danych,
+                  sztucznej inteligencji i programowaniu webowym czyni go
+                  niezwykle wartościowym narzędziem. Zdobycie wiedzy z Pythona
+                  umożliwi mi elastyczne podejście do różnorodnych projektów
+                  oraz efektywne rozwiązywanie problemów programistycznych.
+                  Jestem przekonany, że opanowanie tego języka będzie kluczowe
+                  dla mojego rozwoju zawodowego i pozwoli na tworzenie
+                  innowacyjnych rozwiązań.
+                </p>
+              </div>
+            </div>
+            <div
+              class="moving_div moving_div_7"
+              style="position: relative; left: 265px; top: 1000px"
+            >
+              <img
+                src="obrazki/skills/hex.png"
+                style="position: absolute; width: 450px"
+              />
+              <p
+                style="
+                  position: absolute;
+                  width: 370px;
+                  text-align: justify;
+                  left: 40px;
+                  top: 140px;
+                "
+              >
+                Z pełnym zapałem podchodzę do tych planów, widząc w nich nie
+                tylko szansę na zdobycie nowej wiedzy, ale również możliwość
+                efektywnego zastosowania jej w praktyce. Nie mogę się doczekać,
+                aby w pełni opanować te pozycje i z dumą wykorzystać te
+                umiejętności w rozwoju nowych, innowacyjnych projektów. To dla
+                mnie fascynująca perspektywa, pełna wyzwań i satysfakcji z
+                osiąganych postępów. <br /><br />
+                Te plany stanowią dla mnie nie tylko kolejny etap rozwoju
+                zawodowego, ale także szansę na stawanie się bardziej
+                wszechstronnym specjalistą, gotowym sprostać dynamicznym
+                wyzwaniom dzisiejszego świata technologii. Wierzę, że zdobyte i
+                planowane umiejętności pozwolą mi o wiele efektywniej realizować
+                bieżące projekty.
+              </p>
+            </div>
+          </article>
+        </main>
+        <!-- ********************************footer******************************* -->
+        <footer style="position: absolute; font-weight: 600">
+          <a href="index.html" style="left: 70px">
+            <div class="button"></div>
+            <p>Strona główna</p>
+          </a>
+          <a href="hobby.html" style="left: 290px">
+            <div class="button"></div>
+            <p>Zainteresowania</p>
+          </a>
+          <a href="portfolio.html" style="left: 510px">
+            <div class="button"></div>
+            <p>Portfolio</p>
+          </a>
+          <a href="cv.html" style="left: 730px">
+            <div class="button"></div>
+            <p>CV</p>
+          </a>
+        </footer>
+        <div id="decorations">
+          <div style="top: 900px; left: 100px" class="circle1"></div>
+          <div style="top: 2400px; left: 900px" class="cross1"></div>
+          <div style="top: 3600px; left: 400px" class="circle3"></div>
+          <div style="top: 4800px; left: 200px" class="cross1"></div>
+          <div style="top: 6100px; left: -100px" class="cross1"></div>
+          <div style="top: 7500px; left: -100px" class="circle2"></div>
+          <div style="top: 9300px; left: -100px" class="cross1"></div>
         </div>
-        <script src="JS/skills.js"></script>
-    </body>
+        <!-- ********************************************************************* -->
+      </div>
+    </div>
+    <script src="JS/skills.js"></script>
+  </body>
 </html>

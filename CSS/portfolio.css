@@ -1,46 +1,47 @@
 body {
-    background-color: #1b1b1b;
-    transition: background-color 0.5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Source Sans 3", sans-serif;
-    color: white;
+  background-color: #1b1b1b;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Sans 3", sans-serif;
+  color: white;
 }
 #container {
-    width: 3000px;
-    height: 5200px;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
+  width: 3000px;
+  height: 5200px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 /*********************************************************************/
 /*****************************FOREGROUND******************************/
 /*********************************************************************/
 #foreground {
-    width: 1000px;
-    height: 5100px;
-    left: 1000px;
-    top: 150px;
-    position: relative;
-    background-color: #00000018;
+  width: 1000px;
+  height: 5100px;
+  left: 1000px;
+  top: 150px;
+  position: relative;
+  background-color: #00000018;
 }
 .slider-container {
-    overflow: hidden;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
 }
 
 .slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slider img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }

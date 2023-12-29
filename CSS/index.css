@@ -1,5 +1,6 @@
 body {
   background-color: #1b1b1b;
+  overflow-x: hidden;
   transition: background-color 0.5s ease;
   display: flex;
   justify-content: center;
@@ -9,7 +10,7 @@ body {
 }
 #container {
   width: 3000px;
-  height: 6800px;
+  height: 6850px;
   position: absolute;
   overflow: hidden;
   top: -200px;
@@ -22,7 +23,7 @@ html {
 /*********************************************************************/
 #foreground {
   width: 1000px;
-  height: 6900px;
+  height: 6950px;
   left: 1000px;
   top: 150px;
   position: relative;
@@ -40,21 +41,21 @@ h1 {
 }
 /********************************nav*************************************/
 
-a {
+nav a {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 }
-.hex {
+nav .hex {
   width: 120px;
   position: relative;
 }
 /*#########################################*/
-a:hover {
+nava:hover {
   cursor: pointer;
 }
-.link {
+nav .link {
   color: white;
   font-size: 11px;
   font-weight: 600;
@@ -63,44 +64,49 @@ a:hover {
   text-align: center;
   transition: font-size 0.3s ease;
 }
-a:hover .link {
+nav a:hover .link {
   color: #ffaa11;
   font-size: 13px;
 }
-.nav_icons {
+nav .nav_icons {
   transition: font-size 0.3s ease;
   font-size: 30px;
 }
-a:hover .nav_icons {
+nav a:hover .nav_icons {
   font-size: 35px;
 }
-.hex1 {
+nav .hex1 {
   position: absolute;
   transition: opacity 0.3s ease;
 }
-a:hover .hex1 {
+nav a:hover .hex1 {
   opacity: 0;
 }
-.hex2 {
+nav .hex2 {
   position: absolute;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-a:hover .hex2 {
+nav a:hover .hex2 {
   opacity: 1;
 }
-.hex3 {
+nav .hex3 {
   position: absolute;
   opacity: 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-a:hover .hex3 {
+nav a:hover .hex3 {
   transform: scale(1.2);
   opacity: 0.8;
   z-index: 1;
 }
 /********************************main*************************************/
-
+main a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
 .arrow_up {
   width: 150px;
   position: absolute;
@@ -157,7 +163,11 @@ a:hover .arrow_down_2 {
 }
 .moving_div_2 {
   transform: translateY(-20px);
-  transition: transform 3s ease-out;
+  transition: transform 2.5s ease-out;
+}
+.moving_div_3 {
+  transform: translateY(-20px);
+  transition: transform 5s ease-out;
 }
 .moved_up {
   transform: translateY(-40px);
@@ -168,7 +178,49 @@ a:hover .arrow_down_2 {
   transition: transform 0.05s ease;
 }
 /*************************************************************************/
-
+/*********************************footer**********************************/
+footer a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  position: absolute;
+  color: white;
+  transition: font-size 0.3s ease;
+}
+footer a:hover {
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+}
+footer .button {
+  position: absolute;
+  border-radius: 15px;
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+footer a:hover .button {
+  opacity: 0.2;
+}
+footer .icon {
+  position: absolute;
+  width: 50px;
+  left: -60px;
+  opacity: 0;
+  transition: opacity 10s ease;
+}
+footer a:hover .icon {
+  opacity: 0.4;
+  transition: opacity 1.5s ease;
+}
+footer a p {
+  position: absolute;
+  width: 200px;
+  text-align: center;
+}
+/*************************************************************************/
 @keyframes bounce_up_slow {
   0%,
   1.5%,
