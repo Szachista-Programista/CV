@@ -43,16 +43,16 @@ a:hover .button {
   left: 800px;
   top: 235px;
   position: relative;
-  background-color: #00000030;
+  background-color: #00000024;
   color: white;
   font-family: "Arial Black", Arial, sans-serif;
   font-size: 10.8px;
 }
 .icon {
   position: absolute;
-  left: -45px;
-  top: -7px;
-  font-size: 30px;
+  left: -60px;
+  top: -11px;
+  font-size: 40px;
 }
 
 h1 {
