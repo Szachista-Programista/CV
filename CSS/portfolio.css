@@ -27,21 +27,37 @@ html {
   left: 1000px;
   top: 150px;
   position: relative;
-  background-color: #00000018;
-}
-.slider-container {
-  overflow: hidden;
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
+  background-color: #00000000;
 }
 
+a {
+  color: rgb(255, 255, 255);
+}
+
+/*/////////////////////////SLIDER///////////////////////////////*/
 .slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+  position: relative;
 }
-
 .slider img {
-  width: 100%;
-  height: auto;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1.3s ease-in-out;
+}
+.slider img.active {
+  opacity: 1;
+}
+.slider0 img {
+  width: 800px;
+}
+.slider1 img {
+  width: 600px;
+}
+.slider2 img {
+  width: 600px;
+}
+.slider3 img {
+  width: 600px;
+}
+.slider4 img {
+  width: 600px;
 }
