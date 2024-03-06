@@ -10,7 +10,7 @@ body {
 }
 #container {
   width: 3000px;
-  height: 5200px;
+  height: 6200px;
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -18,20 +18,35 @@ body {
 html {
   scroll-behavior: smooth;
 }
-/*********************************************************************/
-/*****************************FOREGROUND******************************/
-/*********************************************************************/
+
 #foreground {
-  width: 1000px;
-  height: 5100px;
   left: 1000px;
   top: 150px;
   position: relative;
-  background-color: #00000000;
 }
-
+h1 {
+  position: relative;
+  font-weight: 600;
+  font-size: 50px;
+}
+h2 {
+  position: relative;
+  font-weight: 600;
+  font-size: 40px;
+}
+h3 {
+  position: relative;
+  font-weight: 600;
+  font-size: 30px;
+}
 a {
   color: rgb(255, 255, 255);
+}
+p {
+  position: relative;
+  width: 1000px;
+  font-size: 20px;
+  /*text-align: justify;*/
 }
 
 /*/////////////////////////SLIDER///////////////////////////////*/
@@ -60,4 +75,7 @@ a {
 }
 .slider4 img {
   width: 600px;
+}
+.slider5 img {
+  width: 700px;
 }
