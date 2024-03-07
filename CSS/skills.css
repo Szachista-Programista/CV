@@ -8,7 +8,6 @@ body {
   color: #ffffff;
   font-size: 13px;
 }
-
 #container {
   width: 3000px;
   height: 9900px;
@@ -16,12 +15,11 @@ body {
   overflow: hidden;
   top: 0;
 }
-html {
-  scroll-behavior: smooth;
+@media (max-width: 1000px) {
+  #container {
+    left: -800px;
+  }
 }
-/*********************************************************************/
-/*****************************FOREGROUND******************************/
-/*********************************************************************/
 #foreground {
   width: 1000px;
   height: 10000px;
@@ -29,10 +27,14 @@ html {
   top: 150px;
   position: relative;
 }
-/*/////////////////////////HEADER///////////////////////////////*/
-
-/*/////////////////////////////////////////*/
-
+html {
+  scroll-behavior: smooth;
+}
+.highlight {
+  color: #ffaa11;
+  font-weight: 600;
+}
+/**********************************nav***************************************/
 nav a {
   display: flex;
   justify-content: center;
@@ -81,14 +83,12 @@ nav .hex3 {
 nav a:hover .hex3 {
   transform: scale(1.7);
 }
-/*/////////////////////////MAIN///////////////////////////////*/
-/********************************main*nav************************************/
+/********************************arrows************************************/
 .arrow {
   width: 112px;
   position: absolute;
   z-index: 1;
 }
-/*************************************************************************/
 .arrow_up_1 {
   opacity: 1;
   transition: opacity 0.4s ease;
@@ -105,7 +105,6 @@ a:hover .arrow_up_2 {
   opacity: 1;
   animation: bounce_up_fast 1.5s infinite;
 }
-/*************************************************************************/
 .arrow_down_1 {
   opacity: 1;
   transition: opacity 0.4s ease;
@@ -163,11 +162,6 @@ a:hover .arrow_down_2 {
   transform: translateY(0px);
   transition: transform 0.05s ease;
 }
-/***********************************other*********************************/
-.highlight {
-  color: #ffaa11;
-  font-weight: 600;
-}
 /*********************************footer**********************************/
 footer a {
   display: flex;
@@ -209,7 +203,72 @@ footer a p {
   width: 200px;
   text-align: center;
 }
-/*************************************************************************/
+/******************************BACKGROUND*****************************/
+.gear1 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  background-size: cover;
+  background-image: url(../obrazki/CV/gear.png);
+  animation: turn_right 170s linear infinite;
+}
+.gear2 {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  background-size: cover;
+  background-image: url(../obrazki/CV/gear.png);
+  animation: turn_left 200s linear infinite;
+}
+.gear3 {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  background-size: cover;
+  background-image: url(../obrazki/CV/gear.png);
+  animation: turn_right 230s linear infinite;
+}
+.dots1 {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  background-size: cover;
+  background-image: url(../obrazki/CV/dots.png);
+  animation: turn_left 300s linear infinite;
+}
+.circle1 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  background-size: cover;
+  background-image: url(../obrazki/CV/circle.png);
+  animation: up_down 30s linear infinite;
+}
+.circle2 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  background-size: cover;
+  background-image: url(../obrazki/CV/circle.png);
+  animation: left_right 17s linear infinite;
+}
+.circle3 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  background-size: cover;
+  background-image: url(../obrazki/CV/circle.png);
+  animation: slant 9s linear infinite;
+}
+.cross1 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  background-size: cover;
+  background-image: url(../obrazki/CV/cross.png);
+  animation: turn_right 11s linear infinite;
+}
+/***************************************************************************/
 @keyframes bounce_up_slow {
   0%,
   1.5%,
@@ -288,73 +347,6 @@ footer a p {
     transform: translateY(5px);
   }
 }
-/*///////////////////////////BACKGROUND////////////////////////////////////*/
-.gear1 {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  background-size: cover;
-  background-image: url(../obrazki/CV/gear.png);
-  animation: turn_right 170s linear infinite;
-}
-.gear2 {
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  background-size: cover;
-  background-image: url(../obrazki/CV/gear.png);
-  animation: turn_left 200s linear infinite;
-}
-.gear3 {
-  width: 600px;
-  height: 600px;
-  position: absolute;
-  background-size: cover;
-  background-image: url(../obrazki/CV/gear.png);
-  animation: turn_right 230s linear infinite;
-}
-.dots1 {
-  width: 800px;
-  height: 800px;
-  position: absolute;
-  background-size: cover;
-  background-image: url(../obrazki/CV/dots.png);
-  animation: turn_left 300s linear infinite;
-}
-.circle1 {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  background-size: cover;
-  background-image: url(../obrazki/CV/circle.png);
-  animation: up_down 30s linear infinite;
-}
-.circle2 {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  background-size: cover;
-  background-image: url(../obrazki/CV/circle.png);
-  animation: left_right 17s linear infinite;
-}
-.circle3 {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  background-size: cover;
-  background-image: url(../obrazki/CV/circle.png);
-  animation: slant 9s linear infinite;
-}
-.cross1 {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  background-size: cover;
-  background-image: url(../obrazki/CV/cross.png);
-  animation: turn_right 11s linear infinite;
-}
-
-/***************************************************************************/
 @keyframes turn_right {
   from {
     transform: rotate(0deg);
@@ -363,7 +355,6 @@ footer a p {
     transform: rotate(360deg);
   }
 }
-/*********************************************************************/
 @keyframes turn_left {
   from {
     transform: rotate(0deg);
@@ -372,7 +363,6 @@ footer a p {
     transform: rotate(-360deg);
   }
 }
-/*********************************************************************/
 @keyframes up_down {
   0% {
     transform: translateY(0);
@@ -384,7 +374,6 @@ footer a p {
     transform: translateY(0);
   }
 }
-/*********************************************************************/
 @keyframes left_right {
   0% {
     transform: translateX(0);
@@ -396,7 +385,6 @@ footer a p {
     transform: translateX(0);
   }
 }
-/*********************************************************************/
 @keyframes slant {
   0% {
     transform: translate(0, 0);

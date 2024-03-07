@@ -9,7 +9,6 @@ body {
   color: rgb(0, 0, 0);
   font-size: 15px;
 }
-
 #container {
   width: 3000px;
   height: 13400px;
@@ -17,21 +16,22 @@ body {
   overflow: hidden;
   top: 0;
 }
-html {
-  scroll-behavior: smooth;
+@media (max-width: 1000px) {
+  #container {
+    left: -800px;
+  }
 }
-/*********************************************************************/
-/*****************************FOREGROUND******************************/
-/*********************************************************************/
 #foreground {
   width: 1000px;
   height: 12900px;
   left: 1000px;
   top: 150px;
   position: relative;
-  background-color: #00000000;
 }
-/*/////////////////////////HEADER///////////////////////////////*/
+html {
+  scroll-behavior: smooth;
+}
+/********************************hex************************************/
 .hex {
   width: 190px;
   position: absolute;
@@ -45,7 +45,7 @@ html {
 .transparent_hex_3 {
   opacity: 0.03;
 }
-/*/////////////////////////////////////////*/
+/************************************************************************/
 a {
   display: flex;
   align-items: center;
@@ -86,10 +86,7 @@ a p {
   width: 200px;
   text-align: center;
 }
-
-/*/////////////////////////MAIN///////////////////////////////*/
-
-/*/////////////////////////SLIDER///////////////////////////////*/
+/********************************sliders************************************/
 .slider {
   position: relative;
 }
@@ -102,55 +99,45 @@ a p {
 .slider img.active {
   opacity: 1;
 }
-/********************************main*nav************************************/
-
+/********************************arrows************************************/
 .arrow {
   width: 150px;
   position: absolute;
   z-index: 1;
 }
-/*************************************************************************/
 .arrow_up_1 {
   opacity: 0.25;
   transition: opacity 0.4s ease;
   animation: bounce_up_slow 15s infinite;
 }
-
 a:hover .arrow_up_1 {
   opacity: 0;
 }
-
 .arrow_up_2 {
   opacity: 0;
   transition: opacity 0.4s ease;
 }
-
 a:hover .arrow_up_2 {
   opacity: 0.7;
   animation: bounce_up_fast 1.5s infinite;
 }
-/*************************************************************************/
 .arrow_down_1 {
   opacity: 0.25;
   transition: opacity 0.4s ease;
   animation: bounce_down_slow 15s infinite;
 }
-
 a:hover .arrow_down_1 {
   opacity: 0;
 }
-
 .arrow_down_2 {
   opacity: 0;
   transition: opacity 0.4s ease;
 }
-
 a:hover .arrow_down_2 {
   opacity: 0.7;
   animation: bounce_down_fast 1.5s infinite;
 }
 /*******************************moving*divs*******************************/
-
 .moving_div_1 {
   transform: translateY(-20px);
   transition: transform 1s ease-out;
@@ -175,7 +162,6 @@ a:hover .arrow_down_2 {
   transform: translateY(0px);
   transition: transform 0.05s ease;
 }
-/*************************************************************************/
 /*************************************************************************/
 @keyframes bounce_up_slow {
   0%,

@@ -15,20 +15,21 @@ body {
   overflow: hidden;
   top: -200px;
 }
-html {
-  scroll-behavior: smooth;
+@media (max-width: 1000px) {
+  #container {
+    left: -800px;
+  }
 }
-/*********************************************************************/
-/*****************************FOREGROUND******************************/
-/*********************************************************************/
 #foreground {
   width: 1000px;
   height: 6950px;
-  left: 1000px;
+  left: 975px;
   top: 150px;
   position: relative;
 }
-/********************************header********************************/
+html {
+  scroll-behavior: smooth;
+}
 h1 {
   margin: 0;
   font-size: 40px;
@@ -39,8 +40,13 @@ h1 {
   top: 100px;
   white-space: pre;
 }
-/********************************nav*************************************/
-
+main a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+/**********************************nav**************************************/
 nav a {
   display: flex;
   justify-content: center;
@@ -51,8 +57,7 @@ nav .hex {
   width: 120px;
   position: relative;
 }
-/*#########################################*/
-nava:hover {
+nav:hover {
   cursor: pointer;
 }
 nav .link {
@@ -100,13 +105,7 @@ nav a:hover .hex3 {
   opacity: 0.8;
   z-index: 1;
 }
-/********************************main*************************************/
-main a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
+/********************************arrows*************************************/
 .arrow_up {
   width: 150px;
   position: absolute;
@@ -115,48 +114,39 @@ main a {
   width: 150px;
   position: absolute;
 }
-/*************************************************************************/
 .arrow_up_1 {
   opacity: 0.07;
   transition: opacity 0.4s ease;
   animation: bounce_up_slow 15s infinite;
 }
-
 a:hover .arrow_up_1 {
   opacity: 0;
 }
-
 .arrow_up_2 {
   opacity: 0;
   transition: opacity 0.4s ease;
 }
-
 a:hover .arrow_up_2 {
   opacity: 0.7;
   animation: bounce_up_fast 1.5s infinite;
 }
-/*************************************************************************/
 .arrow_down_1 {
   opacity: 0.07;
   transition: opacity 0.4s ease;
   animation: bounce_down_slow 15s infinite;
 }
-
 a:hover .arrow_down_1 {
   opacity: 0;
 }
-
 .arrow_down_2 {
   opacity: 0;
   transition: opacity 0.4s ease;
 }
-
 a:hover .arrow_down_2 {
   opacity: 0.7;
   animation: bounce_down_fast 1.5s infinite;
 }
 /*******************************moving*divs*******************************/
-
 .moving_div_1 {
   transform: translateY(-20px);
   transition: transform 1s ease-out;
@@ -177,7 +167,6 @@ a:hover .arrow_down_2 {
   transform: translateY(0px);
   transition: transform 0.05s ease;
 }
-/*************************************************************************/
 /*********************************footer**********************************/
 footer a {
   display: flex;

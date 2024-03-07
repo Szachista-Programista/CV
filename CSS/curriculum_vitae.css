@@ -4,6 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Arial Black", Arial, sans-serif;
 }
 #container {
   width: 2400px;
@@ -12,49 +13,11 @@ body {
   overflow: hidden;
   top: 0;
 }
-/*********************************************************************/
-/*****************************FOREGROUND******************************/
-/********************************button*************************************/
-a {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  position: absolute;
-  color: black;
-  font-size: 20px;
+@media (max-width: 1000px) {
+  #container {
+    left: -500px;
+  }
 }
-a:hover {
-  cursor: pointer;
-}
-.button {
-  position: absolute;
-  border-radius: 20px;
-  height: 50px;
-  background-color: #ffaa11;
-}
-a:hover .button {
-  background-color: #ee9900;
-}
-/**************************************************************************************/
-#sheet {
-  width: 800px;
-  height: 1150px;
-  left: 800px;
-  top: 235px;
-  position: relative;
-  background-color: #00000024;
-  color: white;
-  font-family: "Arial Black", Arial, sans-serif;
-  font-size: 10.8px;
-}
-.icon {
-  position: absolute;
-  left: -60px;
-  top: -11px;
-  font-size: 40px;
-}
-
 h1 {
   color: #ffaa11;
   font-size: 49px;
@@ -92,9 +55,56 @@ li::before {
   content: "\2022";
   margin-right: 20px;
 }
-/*********************************************************************/
+main {
+  width: 800px;
+  height: 1150px;
+  left: 800px;
+  top: 235px;
+  position: relative;
+  background-color: #00000024;
+  color: white;
+  font-size: 10.8px;
+}
+.icon {
+  position: absolute;
+  left: -60px;
+  top: -11px;
+  font-size: 40px;
+}
+/********************************links*************************************/
+a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  color: black;
+  font-size: 20px;
+}
+a:hover {
+  cursor: pointer;
+}
+.button {
+  position: absolute;
+  border-radius: 20px;
+  height: 50px;
+  background-color: #ffaa11;
+}
+a:hover .button {
+  background-color: #ee9900;
+}
+footer .button {
+  border-radius: 15px;
+  width: 150px;
+  height: 38px;
+}
+footer a p {
+  position: absolute;
+  width: 150px;
+  font-size: 13px;
+  text-align: center;
+}
 /******************************BACKGROUND*****************************/
-/*********************************************************************/
 #gear1 {
   width: 400px;
   height: 400px;
@@ -102,7 +112,7 @@ li::before {
   left: 1850px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/gear.png);
+  background-image: url(../img/CV/gear.png);
   animation: turn_right 180s linear infinite;
 }
 #gear2 {
@@ -112,7 +122,7 @@ li::before {
   left: 1560px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/gear.png);
+  background-image: url(../img/CV/gear.png);
   animation: turn_right 190s linear infinite;
 }
 #dots1 {
@@ -122,7 +132,7 @@ li::before {
   left: 100px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/dots.png);
+  background-image: url(../img/CV/dots.png);
   animation: turn_right 180s linear infinite;
 }
 #circle1 {
@@ -132,7 +142,7 @@ li::before {
   left: 400px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/circle.png);
+  background-image: url(../img/CV/circle.png);
   animation: up_down 19s linear infinite;
 }
 #circle2 {
@@ -142,7 +152,7 @@ li::before {
   left: 1800px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/circle.png);
+  background-image: url(../img/CV/circle.png);
   animation: left_right 20s linear infinite;
 }
 #circle3 {
@@ -152,7 +162,7 @@ li::before {
   left: 300px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/circle.png);
+  background-image: url(../img/CV/circle.png);
   animation: slant 21s linear infinite;
 }
 #cross1 {
@@ -162,7 +172,7 @@ li::before {
   left: 0px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/cross.png);
+  background-image: url(../img/CV/cross.png);
   animation: turn_right 50s linear infinite;
 }
 #cross2 {
@@ -172,7 +182,7 @@ li::before {
   left: 2250px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/cross.png);
+  background-image: url(../img/CV/cross.png);
   animation: turn_left 50s linear infinite;
 }
 #cross3 {
@@ -181,7 +191,7 @@ li::before {
   top: -130px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/cross.png);
+  background-image: url(../img/CV/cross.png);
   animation: drive 200s linear infinite;
 }
 #stripes1 {
@@ -191,7 +201,7 @@ li::before {
   left: 630px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/stripes.1.png);
+  background-image: url(../img/CV/stripes.1.png);
   animation: slant 60s linear infinite;
 }
 #stripes2 {
@@ -201,7 +211,7 @@ li::before {
   left: 1100px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/stripes.2.png);
+  background-image: url(../img/CV/stripes.2.png);
   animation: left_right 30s linear infinite;
 }
 #octagon1 {
@@ -211,7 +221,7 @@ li::before {
   left: 1000px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/octagon.png);
+  background-image: url(../img/CV/octagon.png);
   animation: turn_up_down 210s linear infinite;
 }
 #octagon2 {
@@ -221,7 +231,7 @@ li::before {
   left: -70px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/octagon.png);
+  background-image: url(../img/CV/octagon.png);
   animation: turn_lefr_right 190s linear infinite;
 }
 #cover11 {
@@ -272,9 +282,10 @@ li::before {
   left: -370px;
   position: absolute;
   /*********************************************************************/
-  /******************************DEFINICJE*RUCHÓW***********************/
+  /******************************movements*definition*******************/
   /*********************************************************************/
 }
+/*********************************************************************/
 @keyframes turn_right {
   from {
     transform: rotate(0deg);
@@ -283,7 +294,6 @@ li::before {
     transform: rotate(360deg);
   }
 }
-/*********************************************************************/
 @keyframes turn_left {
   from {
     transform: rotate(0deg);
@@ -292,7 +302,6 @@ li::before {
     transform: rotate(-360deg);
   }
 }
-/*********************************************************************/
 @keyframes up_down {
   0% {
     transform: translateY(0);
@@ -304,7 +313,6 @@ li::before {
     transform: translateY(0);
   }
 }
-/*********************************************************************/
 @keyframes left_right {
   0% {
     transform: translateX(0);
@@ -316,7 +324,6 @@ li::before {
     transform: translateX(0);
   }
 }
-/*********************************************************************/
 @keyframes slant {
   0% {
     transform: translate(0, 0);
@@ -328,7 +335,6 @@ li::before {
     transform: translate(0, 0);
   }
 }
-/*********************************************************************/
 @keyframes turn_up_down {
   0% {
     transform: translate(0, 0) rotate(0deg);
@@ -382,7 +388,6 @@ li::before {
     transform: translate(0, 0) rotate(360deg);
   }
 }
-/*********************************************************************/
 @keyframes turn_lefr_right {
   0% {
     transform: translate(0, 0) rotate(0deg);
@@ -436,7 +441,6 @@ li::before {
     transform: translate(0, 0) rotate(360deg);
   }
 }
-/*********************************************************************/
 @keyframes drive {
   0% {
     transform: translateX(0) rotate(0deg);
