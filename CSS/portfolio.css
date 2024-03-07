@@ -18,10 +18,11 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
 #foreground {
   left: 1000px;
   top: 150px;
+  width: 1000px;
+  height: 6000px;
   position: relative;
 }
 h1 {
@@ -39,17 +40,13 @@ h3 {
   font-weight: 600;
   font-size: 30px;
 }
-a {
-  color: rgb(255, 255, 255);
-}
 p {
   position: relative;
   width: 1000px;
   font-size: 20px;
-  /*text-align: justify;*/
+  text-align: justify;
 }
-
-/*/////////////////////////SLIDER///////////////////////////////*/
+/*********************************sliders**********************************/
 .slider {
   position: relative;
 }
@@ -78,4 +75,41 @@ p {
 }
 .slider5 img {
   width: 700px;
+}
+/*********************************links**********************************/
+a {
+  color: rgb(255, 255, 255);
+}
+footer a,
+header a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  position: absolute;
+  transition: font-size 0.3s ease;
+}
+footer .button,
+header .button {
+  position: absolute;
+  border-radius: 15px;
+  width: 200px;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+footer a:hover .button,
+header a:hover .button {
+  opacity: 0.2;
+}
+footer a p,
+header a p {
+  position: absolute;
+  width: 200px;
+  text-align: center;
+}
+header .button {
+  height: 70px;
+}
+footer .button {
+  height: 50px;
 }

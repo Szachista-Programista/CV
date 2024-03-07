@@ -1,8 +1,9 @@
 /////////////////////SCROLLBAR//////////////////////
-/*document.addEventListener("DOMContentLoaded", function () {
-    document.documentElement.scrollTop = 270;
-});*/
+document.addEventListener("DOMContentLoaded", function () {
+  document.documentElement.scrollTop = 110;
+});
 ////////////////////////////////////////////////////
+/*
 document
   .getElementById("scrollLink1")
   .addEventListener("click", function (event) {
@@ -23,3 +24,4 @@ document
     event.preventDefault();
     window.scrollTo(0, 4200);
   });
+*/
