@@ -10,7 +10,7 @@ body {
 }
 #container {
   width: 3000px;
-  height: 6200px;
+  height: 6000px;
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -24,7 +24,6 @@ body {
   left: 1000px;
   top: 150px;
   width: 1000px;
-  height: 6000px;
   position: relative;
 }
 html {

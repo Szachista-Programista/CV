@@ -10,7 +10,7 @@ body {
 }
 #container {
   width: 3000px;
-  height: 9900px;
+  height: 9650px;
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -22,7 +22,6 @@ body {
 }
 #foreground {
   width: 1000px;
-  height: 10000px;
   left: 1000px;
   top: 150px;
   position: relative;

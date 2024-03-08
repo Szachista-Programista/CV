@@ -13,29 +13,10 @@ body {
   overflow: hidden;
   top: 0;
 }
-<<<<<<< HEAD
 @media (max-width: 1000px) {
   #container {
     left: -500px;
   }
-=======
-/**************************************************************************************/
-main {
-  width: 800px;
-  height: 1150px;
-  left: 800px;
-  top: 235px;
-  position: relative;
-  background-color: #00000024;
-  color: white;
-  font-size: 10.8px;
-}
-.icon {
-  position: absolute;
-  left: -60px;
-  top: -11px;
-  font-size: 40px;
->>>>>>> 3f67e76fce272e606c524231729072bcdf5f2f08
 }
 h1 {
   color: #ffaa11;
@@ -74,7 +55,6 @@ li::before {
   content: "\2022";
   margin-right: 20px;
 }
-<<<<<<< HEAD
 main {
   width: 800px;
   height: 1150px;
@@ -91,8 +71,6 @@ main {
   top: -11px;
   font-size: 40px;
 }
-=======
->>>>>>> 3f67e76fce272e606c524231729072bcdf5f2f08
 /********************************links*************************************/
 a {
   display: flex;
@@ -126,10 +104,6 @@ footer a p {
   font-size: 13px;
   text-align: center;
 }
-<<<<<<< HEAD
-=======
-/*********************************************************************/
->>>>>>> 3f67e76fce272e606c524231729072bcdf5f2f08
 /******************************BACKGROUND*****************************/
 #gear1 {
   width: 400px;
