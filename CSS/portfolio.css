@@ -10,7 +10,7 @@ body {
 }
 #container {
   width: 3000px;
-  height: 6000px;
+  height: 8025px;
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -79,6 +79,18 @@ p {
 }
 .slider5 img {
   width: 700px;
+}
+.slider6 img {
+  width: 600px;
+}
+.slider7 img {
+  width: 600px;
+}
+.slider8 img {
+  width: 600px;
+}
+.slider9 img {
+  width: 600px;
 }
 /*********************************links**********************************/
 a {

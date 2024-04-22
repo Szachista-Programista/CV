@@ -208,7 +208,7 @@ footer a p {
   height: 400px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/gear.png);
+  background-image: url(../img/CV/gear.png);
   animation: turn_right 170s linear infinite;
 }
 .gear2 {
@@ -216,7 +216,7 @@ footer a p {
   height: 500px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/gear.png);
+  background-image: url(../img/CV/gear.png);
   animation: turn_left 200s linear infinite;
 }
 .gear3 {
@@ -224,7 +224,7 @@ footer a p {
   height: 600px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/gear.png);
+  background-image: url(../img/CV/gear.png);
   animation: turn_right 230s linear infinite;
 }
 .dots1 {
@@ -232,7 +232,7 @@ footer a p {
   height: 800px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/dots.png);
+  background-image: url(../img/CV/dots.png);
   animation: turn_left 300s linear infinite;
 }
 .circle1 {
@@ -240,7 +240,7 @@ footer a p {
   height: 70px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/circle.png);
+  background-image: url(../img/CV/circle.png);
   animation: up_down 30s linear infinite;
 }
 .circle2 {
@@ -248,7 +248,7 @@ footer a p {
   height: 70px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/circle.png);
+  background-image: url(../img/CV/circle.png);
   animation: left_right 17s linear infinite;
 }
 .circle3 {
@@ -256,7 +256,7 @@ footer a p {
   height: 70px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/circle.png);
+  background-image: url(../img/CV/circle.png);
   animation: slant 9s linear infinite;
 }
 .cross1 {
@@ -264,7 +264,7 @@ footer a p {
   height: 70px;
   position: absolute;
   background-size: cover;
-  background-image: url(../obrazki/CV/cross.png);
+  background-image: url(../img/CV/cross.png);
   animation: turn_right 11s linear infinite;
 }
 /***************************************************************************/
