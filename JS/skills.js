@@ -101,58 +101,70 @@ document
     window.scrollTo(0, 5200);
   });
 document
-  .getElementById("scrollLink5")
+  .getElementById("scrollLink4.5")
   .addEventListener("click", function (event) {
     event.preventDefault();
     window.scrollTo(0, 6500);
+  });
+document
+  .getElementById("scrollLink_up_to_4.5")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 6500);
+  });
+document
+  .getElementById("scrollLink_down_to_4.5")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 6500);
+  });
+document
+  .getElementById("scrollLink5")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo(0, 7800);
   });
 document
   .getElementById("scrollLink_up_to_5")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    window.scrollTo(0, 6500);
+    window.scrollTo(0, 7800);
   });
 document
   .getElementById("scrollLink_down_to_5")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    window.scrollTo(0, 6500);
+    window.scrollTo(0, 7800);
   });
 document
   .getElementById("scrollLink6")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    window.scrollTo(0, 8100);
+    window.scrollTo(0, 9400);
   });
 document
   .getElementById("scrollLink66")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    window.scrollTo(0, 7900);
-  });
-document
-  .getElementById("scrollLink666")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    window.scrollTo(0, 8560);
+    window.scrollTo(0, 9200);
   });
 document
   .getElementById("scrollLink6666")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    window.scrollTo(0, 8400);
+    window.scrollTo(0, 9700);
   });
 document
   .getElementById("scrollLink_down_to_6")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    window.scrollTo(0, 7900);
+    window.scrollTo(0, 9200);
   });
 document
   .getElementById("scrollLink_down_to_7")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    window.scrollTo(0, 9000);
+    window.scrollTo(0, 10300);
   });
 ////////////////////moving///divs///////////////////
 document.addEventListener("DOMContentLoaded", function () {
